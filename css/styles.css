@@ -107,7 +107,7 @@ img {
 .link {
     text-decoration: none;
     color: var(--secondary-color);
-   
+   display: block;
 }
 
 .icon-mail {
@@ -149,7 +149,7 @@ img {
 /* -----------------------------------------------Hero------------------------------ */
 
 .hero {
-  background-image: url(../images/Img\ Overlay.png),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img\ Overlay.png),
     url(../images/Img.jpg);
   background-color: #2f303a;
   background-repeat: no-repeat;
@@ -352,7 +352,13 @@ img {
     padding-bottom: 30px;
     text-align: center;
 }
-
+.worker-soc-link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .worker-soc-link:hover,
 .worker-soc-link:focus {
    background-color: var(--accent-color);
