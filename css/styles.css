@@ -147,13 +147,23 @@ img {
     
 } */
 /* -----------------------------------------------Hero------------------------------ */
+
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding: 200px 0;
-    text-align: center;
-    background-color: #2F303A;
+  background-image: url(../images/Img\ Overlay.png),
+    url(../images/Img.jpg);
+  background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 200px 0;
+  text-align: center;
 }
+
+
 
 .hero-title {
         font-style: normal;
@@ -321,7 +331,14 @@ img {
     margin-top: 16px;
     
 }
-
+.worker-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.icon-social { 
+  fill: var(--secondary-color);
+}
 .team-member:not(:last-child) {
     margin-right: 30px;
 }
@@ -338,10 +355,11 @@ img {
 
 .worker-soc-link:hover,
 .worker-soc-link:focus {
-  background-color: var(--accent-color);
+   background-color: var(--accent-color);
 }
 .worker-soc-link:hover .icon-social,
 .worker-soc-link:focus .icon-social {
+  border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--background-color);
 }
@@ -485,8 +503,8 @@ footer .logo {
 
 .footer-block:nth-child(2) {
   margin-left: 70px;
-  margin-bottom: 100px;
-  margin-top: 12px;
+  /* margin-bottom: 100px;
+  margin-top: 12px; */
 }
 
 /* =================================================Portfolio--------------------------- */
